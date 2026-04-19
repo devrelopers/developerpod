@@ -1,0 +1,18 @@
+[book]
+title = "developerpod"
+authors = ["David Liedle"]
+language = "en"
+src = "src"
+description = "Documentation for developerpod — the machine that runs kcups."
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+no-section-label = true
+git-repository-url = "https://github.com/DevRelopers/developerpod"
+edit-url-template = "https://github.com/DevRelopers/developerpod/edit/main/docs/{path}"
+site-url = "/developerpod/"
+
+[output.html.fold]
+enable = true
+level = 1
