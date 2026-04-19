@@ -1,9 +1,15 @@
 [package]
 name = "developerpod"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
-description = "A CLI that runs declarative AI-backed kcups — TOML pods that describe context to gather and what to ask a model"
+authors = ["David Liedle <david.liedle@protonmail.com>"]
+description = "Developerpod is the machine. Kcups are the pods — tiny *.kcup.toml files declaring what to gather, what to ask a model, and what shape the answer should take. The machine handles the rest: context, API calls, structured output. Tiny AI-backed dev tools, one TOML file each."
 license = "MIT"
+repository = "https://github.com/DevRelopers/developerpod"
+homepage = "https://developerpod.com"
+readme = "README.md"
+keywords = ["ai", "cli", "llm", "toml", "devtools"]
+categories = ["command-line-utilities"]
 
 [[bin]]
 name = "developerpod"
