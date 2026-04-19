@@ -84,14 +84,14 @@ API key is set. Detection order is fixed; the first match wins. Override with
 | # | Provider   | `--provider` id | Default model                        | Env vars scanned (in order)                                                                  |
 |---|------------|-----------------|--------------------------------------|----------------------------------------------------------------------------------------------|
 | 1 | Anthropic  | `anthropic`     | `claude-sonnet-4-6`                  | `ANTHROPIC_API_KEY`, `CLAUDE_API_KEY`, `CLAUDE_KEY`, `ANTHROPIC_KEY`                         |
-| 2 | OpenAI     | `openai`        | `gpt-4o`                             | `OPENAI_API_KEY`, `CHATGPT_API_KEY`, `CHATGPT_KEY`, `OPENAI_KEY`, `GPT_API_KEY`, `GPT_KEY`   |
+| 2 | OpenAI     | `openai`        | `gpt-5.4`                            | `OPENAI_API_KEY`, `CHATGPT_API_KEY`, `CHATGPT_KEY`, `OPENAI_KEY`, `GPT_API_KEY`, `GPT_KEY`   |
 | 3 | Google     | `google`        | `gemini-2.5-flash`                   | `GEMINI_API_KEY`, `GOOGLE_API_KEY`, `GOOGLE_AI_API_KEY`, `GOOGLE_GENAI_API_KEY`, `GEMINI_KEY`|
 | 4 | Groq       | `groq`          | `llama-3.3-70b-versatile`            | `GROQ_API_KEY`, `GROQ_KEY`                                                                   |
 | 5 | Mistral    | `mistral`       | `mistral-large-latest`               | `MISTRAL_API_KEY`, `MISTRAL_KEY`                                                             |
-| 6 | Cohere     | `cohere`        | `command-r-plus`                     | `COHERE_API_KEY`, `CO_API_KEY`, `COHERE_KEY`                                                 |
+| 6 | Cohere     | `cohere`        | `command-a-03-2025`                  | `COHERE_API_KEY`, `CO_API_KEY`, `COHERE_KEY`                                                 |
 | 7 | DeepSeek   | `deepseek`      | `deepseek-chat`                      | `DEEPSEEK_API_KEY`, `DEEPSEEK_KEY`                                                           |
-| 8 | xAI        | `xai`           | `grok-2-latest`                      | `XAI_API_KEY`, `GROK_API_KEY`, `GROK_KEY`, `XAI_KEY`                                         |
-| 9 | OpenRouter | `openrouter`    | `anthropic/claude-sonnet-4-6`        | `OPENROUTER_API_KEY`, `OPENROUTER_KEY`                                                       |
+| 8 | xAI        | `xai`           | `grok-4-1-fast-non-reasoning`        | `XAI_API_KEY`, `GROK_API_KEY`, `GROK_KEY`, `XAI_KEY`                                         |
+| 9 | OpenRouter | `openrouter`    | `anthropic/claude-sonnet-4.6`        | `OPENROUTER_API_KEY`, `OPENROUTER_KEY`                                                       |
 
 Structured output is requested in each provider's native idiom: Anthropic forced
 tool use, OpenAI/Groq/DeepSeek/xAI/OpenRouter `response_format: json_schema`,

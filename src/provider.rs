@@ -48,7 +48,7 @@ pub const PROVIDERS: &[ProviderInfo] = &[
             "GPT_API_KEY",
             "GPT_KEY",
         ],
-        default_model: "gpt-4o",
+        default_model: "gpt-5.4",
         endpoint: "https://api.openai.com/v1/chat/completions",
     },
     ProviderInfo {
@@ -86,7 +86,7 @@ pub const PROVIDERS: &[ProviderInfo] = &[
         display_name: "Cohere",
         id: "cohere",
         env_vars: &["COHERE_API_KEY", "CO_API_KEY", "COHERE_KEY"],
-        default_model: "command-r-plus",
+        default_model: "command-a-03-2025",
         endpoint: "https://api.cohere.com/v2/chat",
     },
     ProviderInfo {
@@ -102,7 +102,7 @@ pub const PROVIDERS: &[ProviderInfo] = &[
         display_name: "xAI",
         id: "xai",
         env_vars: &["XAI_API_KEY", "GROK_API_KEY", "GROK_KEY", "XAI_KEY"],
-        default_model: "grok-2-latest",
+        default_model: "grok-4-1-fast-non-reasoning",
         endpoint: "https://api.x.ai/v1/chat/completions",
     },
     ProviderInfo {
@@ -110,7 +110,7 @@ pub const PROVIDERS: &[ProviderInfo] = &[
         display_name: "OpenRouter",
         id: "openrouter",
         env_vars: &["OPENROUTER_API_KEY", "OPENROUTER_KEY"],
-        default_model: "anthropic/claude-sonnet-4-6",
+        default_model: "anthropic/claude-sonnet-4.6",
         endpoint: "https://openrouter.ai/api/v1/chat/completions",
     },
 ];
