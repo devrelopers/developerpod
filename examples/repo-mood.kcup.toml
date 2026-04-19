@@ -1,0 +1,24 @@
+name = "repo-mood"
+description = "Read the current vibe of a git repo"
+
+[[gather]]
+id = "commits"
+shell = "git log --oneline -20"
+
+[[gather]]
+id = "readme"
+file = "README.md"
+optional = true
+
+[prompt]
+system = "You read repo signals and return the current mood."
+user = """
+Recent commits:
+{{commits}}
+
+README:
+{{readme}}
+"""
+
+[output]
+schema = { mood = "string", evidence = "string", one_liner = "string" }
